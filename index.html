@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GRURU MUSEUM — พิพิธภัณฑ์ความรู้ดิจิทัลเพื่ออนาคต (Digital Knowledge Museum)</title>
+  
+  <!-- Modern Tech Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Tech Specimen Background Grid -->
+  <div class="bg-grid"></div>
+
+  <!-- Main Presentation Container -->
+  <div class="deck-container">
+    
+    <!-- Top HUD Navigation Header -->
+    <header class="deck-header">
+      <div class="brand-wrapper">
+        <img src="logo.jpg" alt="GRURU Museum Logo" class="brand-logo-img">
+        <div>
+          <div class="brand-title">
+            GRURU MUSEUM
+            <span class="brand-pill">DIGITAL MINISTRY BRIEF</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-controls">
+        <div class="timer-tag">
+          <span class="timer-dot"></span>
+          <span id="timerDisplay">00:00</span>
+        </div>
+        <div class="specimen-tag">PROJECT BRIEF ID: GRM-2026-GOV-01</div>
+        <button class="btn-ctrl" id="prevSlide" title="Previous Slide (←)">
+          ◀ ก่อนหน้า
+        </button>
+        <button class="btn-ctrl btn-primary" id="nextSlide" title="Next Slide (→ / Space)">
+          ถัดไป ▶
+        </button>
+        <button class="btn-ctrl" id="fullscreenBtn" title="Full Screen (F)">
+          ⛶ เต็มจอ
+        </button>
+      </div>
+    </header>
+
+    <!-- Slide Deck Content -->
+    <main class="slides-wrapper">
+
+      <!-- ================= SLIDE 1: Cover & Key Theme ================= -->
+      <section class="slide active" id="slide-1">
+        <div class="slide-hud">
+          <span class="hud-code">STAGE 01 // OVERVIEW & VISION</span>
+          <span class="hud-badge">MINISTERIAL BRIEFING</span>
+        </div>
+
+        <div class="grid-2col">
+          <div>
+            <div style="display: inline-flex; align-items: center; gap: 8px; margin-bottom: 12px; background: rgba(215, 255, 58, 0.2); padding: 4px 12px; border-radius: 4px; border: 1px solid rgba(215, 255, 58, 0.5);">
+              <span style="font-family: var(--font-mono); font-size: 0.8rem; font-weight: 700; color: #1E293B;">🏛️ วาระขับเคลื่อนโครงสร้างพื้นฐานความรู้ดิจิทัลแห่งชาติ</span>
+            </div>
+            <h1 class="slide-title">
+              GRURU MUSEUM<br>
+              <span class="highlight-text">พิพิธภัณฑ์ความรู้ดิจิทัล</span> แห่งอนาคต
+            </h1>
+            <p class="slide-subtitle">
+              “New Knowledge. New Storytelling. Built for Everyday Living.”<br>
+              เปลี่ยนคลังความรู้และประวัติศาสตร์ที่กระจัดกระจาย สู่ <strong>โครงข่ายความรู้แห่งชาติ (Knowledge Graph)</strong> ที่เข้าถึงง่ายใน 3 วินาที
+            </p>
+
+            <div class="grid-3col" style="margin-top: 24px;">
+              <div class="boom-metric">
+                <div class="metric-num text-lime">3 วินาที</div>
+                <div class="metric-label">Instant Insight</div>
+                <div class="metric-sub">เข้าใจแก่นสาระทันที</div>
+              </div>
+              <div class="boom-metric">
+                <div class="metric-num text-cyan">100,000+</div>
+                <div class="metric-label">Data Nodes</div>
+                <div class="metric-sub">เชื่อมโยงข้ามมิติ</div>
+              </div>
+              <div class="boom-metric">
+                <div class="metric-num text-violet">100%</div>
+                <div class="metric-label">Open & Actionable</div>
+                <div class="metric-sub">นำไปใช้ได้จริงทุกวัน</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="image-tech-frame">
+            <img src="hero.jpg" alt="Future Archaeology Concept">
+            <div class="image-caption-hud">
+              <span>CONCEPT: FUTURE ARCHAEOLOGY (ห้องแล็บโบราณคดีดิจิทัล)</span>
+              <span>VERIFIED SOURCE</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SLIDE 2: Vision & The 3 Pillars ================= -->
+      <section class="slide" id="slide-2">
+        <div class="slide-hud">
+          <span class="hud-code">STAGE 02 // STRATEGIC VALUE</span>
+          <span class="hud-badge">3 วินาที เข้าใจครบ 3 เสาหลัก</span>
+        </div>
+
+        <h2 class="slide-title">3 หัวใจหลักของ GRURU MUSEUM</h2>
+        <p class="slide-subtitle">ตอบโจทย์ยุทธศาสตร์ดิจิทัลเพื่อการเรียนรู้ตลอดชีวิตของคนไทยในศตวรรษที่ 21</p>
+
+        <div class="grid-3col">
+          <div class="tech-card">
+            <div class="pillar-badge" style="background: rgba(6, 182, 212, 0.15); color: #0284C7;">
+              PILLAR 01 // NEW KNOWLEDGE
+            </div>
+            <h3 class="pillar-title">ความรู้ที่ขุดค้นและมีหลักฐาน</h3>
+            <p class="pillar-desc">
+              แก้ปัญหาข้อมูลลอยๆ ข่าวปลอม (Fake News) ด้วยการแปลงจดหมายเหตุ คลังข้อมูลสิทธิบัตร และงานวิจัย มาเป็นชุดข้อมูลที่ตรวจสอบที่มาได้ทุกจุด
+            </p>
+            <div style="margin-top: 18px; padding-top: 14px; border-top: 1px dashed var(--gr-border); font-family: var(--font-mono); font-size: 0.8rem; color: #64748B;">
+              ✓ ข้อมูลอ้างอิงชัดเจน<br>
+              ✓ ยกระดับคลังปัญญาสู่ระดับโลก
+            </div>
+          </div>
+
+          <div class="tech-card">
+            <div class="pillar-badge" style="background: rgba(215, 255, 58, 0.3); color: #3F6212;">
+              PILLAR 02 // NEW STORYTELLING
+            </div>
+            <h3 class="pillar-title">เล่าด้วย Data Visualization</h3>
+            <p class="pillar-desc">
+              แทนที่บทความยาวๆ ด้วยระบบ <strong>Data Booming</strong> และ <strong>Interactive Knowledge Graph</strong> ตอบโจทย์พฤติกรรมคนรุ่นใหม่ที่ชอบ Visual Storytelling
+            </p>
+            <div style="margin-top: 18px; padding-top: 14px; border-top: 1px dashed var(--gr-border); font-family: var(--font-mono); font-size: 0.8rem; color: #64748B;">
+              ✓ โต้ตอบได้หลายมิติ<br>
+              ✓ เห็นภาพรวมในคลิกเดียว
+            </div>
+          </div>
+
+          <div class="tech-card">
+            <div class="pillar-badge" style="background: rgba(140, 107, 255, 0.15); color: #6D28D9;">
+              PILLAR 03 // EVERYDAY LIVING
+            </div>
+            <h3 class="pillar-title">จบด้วยการนำไปใช้จริง</h3>
+            <p class="pillar-desc">
+              ทุกชุดความรู้ต้องมีการ์ด <strong>Everyday Takeaway</strong> ชี้ชัดว่าสิ่งนี้ช่วยเศรษฐกิจครัวเรือน การงาน สุขภาพ หรือการสร้างสรรค์นวัตกรรมใหม่อย่างไร
+            </p>
+            <div style="margin-top: 18px; padding-top: 14px; border-top: 1px dashed var(--gr-border); font-family: var(--font-mono); font-size: 0.8rem; color: #64748B;">
+              ✓ นำไปต่อยอดเศรษฐกิจได้ทันที<br>
+              ✓ เชื่อมโยงชีวิตประจำวัน
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SLIDE 3: Brand Identity & Thai Heritage Tech Logo ================= -->
+      <section class="slide" id="slide-3">
+        <div class="slide-hud">
+          <span class="hud-code">STAGE 03 // IDENTITY & DESIGN SYSTEM</span>
+          <span class="hud-badge">PAST WARM × FUTURE ELECTRIC</span>
+        </div>
+
+        <div class="grid-2col">
+          <div>
+            <h2 class="slide-title">อัตลักษณ์ผสมผสาน: สาย Tech ร่วมสมัย เสริมลายไทย</h2>
+            <p class="slide-subtitle">
+              ออกแบบ Logo สะท้อนแนวคิด <strong>“อดีตคือข้อมูล อนาคตคือเรื่องเล่า”</strong> ผสานโครงสร้างเซลล์สมองและเครือข่ายเน็ตเวิร์กเข้ากับลายกนกและยอดพระปรางค์ไทย
+            </p>
+
+            <div class="tech-card" style="margin-bottom: 20px;">
+              <h4 style="font-family: var(--font-heading); font-size: 1.1rem; margin-bottom: 8px;">
+                🎨 ปรัชญาการออกแบบสี (WCAG AA Compliant)
+              </h4>
+              <p style="font-size: 0.95rem; color: var(--gr-fog);">
+                ใช้พื้นหลังสว่างแบบคลีนเทค (Lab White/Paper) พร้อมคู่สีไฟฟ้า <strong>Specimen Lime (#D7FF3A)</strong>, <strong>Hologram Cyan (#2EE6FF)</strong> และโทนอุ่น <strong>Ember Orange (#FF5A1F)</strong> แสดงการเปลี่ยนผ่านจากอดีตสู่อนาคต
+              </p>
+            </div>
+
+            <div class="grid-2col" style="gap: 16px;">
+              <div class="swatch-item">
+                <div class="swatch-color" style="background: #D7FF3A;"></div>
+                <div class="swatch-info">
+                  <span class="swatch-name">Specimen Lime</span>
+                  <span class="swatch-hex">#D7FF3A (Active Node)</span>
+                </div>
+              </div>
+              <div class="swatch-item">
+                <div class="swatch-color" style="background: #06B6D4;"></div>
+                <div class="swatch-info">
+                  <span class="swatch-name">Hologram Cyan</span>
+                  <span class="swatch-hex">#06B6D4 (Data Stream)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 16px;">
+            <div class="image-tech-frame" style="text-align: center; padding: 20px; background: #FFFFFF;">
+              <img src="logo.jpg" alt="Official GRURU Museum Logo" style="max-height: 240px; width: auto; margin: 0 auto; border-radius: 8px;">
+              <div style="margin-top: 10px; font-family: var(--font-mono); font-size: 0.8rem; color: #475569;">
+                <strong>GRURU MUSEUM LOGO</strong>: Knowledge Graph Neural Network + ลายไทย (Kanok Ornament)
+              </div>
+            </div>
+            <div class="image-tech-frame">
+              <img src="color_palette.jpg" alt="Color System" style="max-height: 140px;">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SLIDE 4: Target Audience Personas ================= -->
+      <section class="slide" id="slide-4">
+        <div class="slide-hud">
+          <span class="hud-code">STAGE 04 // TARGET AUDIENCE</span>
+          <span class="hud-badge">ครอบคลุมประชาชนวัย 22 - 40 ปี</span>
+        </div>
+
+        <h2 class="slide-title">ตอบโจทย์กลุ่มเป้าหมายเชิงลึก (3 Key Personas)</h2>
+        <p class="slide-subtitle">“อยากรู้ลึก แต่ไม่อยากรู้สึกว่ากำลังเรียน” — ปรับโหมดประสบการณ์ตรงตามไลฟ์สไตล์</p>
+
+        <div class="grid-2col">
+          <div class="image-tech-frame">
+            <img src="personas.jpg" alt="User Personas">
+            <div class="image-caption-hud">
+              <span>PERSONA SEGMENTATION 2026</span>
+              <span>DATA-DRIVEN UX</span>
+            </div>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 16px;">
+            <div class="tech-card">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                <strong style="font-family: var(--font-heading); color: #84CC16; font-size: 1.15rem;">01. Curious Starter (อายุ 22–27 ปี)</strong>
+                <span class="hud-badge">First Jobbers</span>
+              </div>
+              <p style="font-size: 0.9rem; color: var(--gr-fog);">
+                ใช้มือถือเป็นหลัก ชอบคอนเทนต์กระชับ สวยงาม แชร์ได้ การ์ดสรุปขนาด 1080×1350 px เหมาะกับ Social Media ทันที
+              </p>
+            </div>
+
+            <div class="tech-card">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                <strong style="font-family: var(--font-heading); color: var(--gr-violet); font-size: 1.15rem;">02. Creative Professional (อายุ 25–34 ปี)</strong>
+                <span class="hud-badge">Creator & Devs</span>
+              </div>
+              <p style="font-size: 0.9rem; color: var(--gr-fog);">
+                มองหาแรงบันดาลใจและข้อมูลดิบ ต้องการระบบสำรวจ Interactive Graph เชิงลึก และส่งออกชุดข้อมูลเปิด (Open Data) ไปต่อยอด
+              </p>
+            </div>
+
+            <div class="tech-card">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                <strong style="font-family: var(--font-heading); color: #0284C7; font-size: 1.15rem;">03. Lifelong Learner (อายุ 30–40 ปี)</strong>
+                <span class="hud-badge">Family & Executives</span>
+              </div>
+              <p style="font-size: 0.9rem; color: var(--gr-fog);">
+                ต้องการความถูกต้องแม่นยำ เช็กแหล่งที่มาได้ เพื่อนำความรู้เรื่องสุขภาพ โภชนาการ และการใช้ชีวิตไปปรับใช้กับครอบครัว
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SLIDE 5: Data Booming Simulation ================= -->
+      <section class="slide" id="slide-5">
+        <div class="slide-hud">
+          <span class="hud-code">STAGE 05 // CORE INNOVATION FEATURE</span>
+          <span class="hud-badge">DATA BOOMING (ระเบิดความรู้ใน 3 วินาที)</span>
+        </div>
+
+        <div class="grid-2col">
+          <div>
+            <h2 class="slide-title">นวัตกรรม “Data Booming”</h2>
+            <p class="slide-subtitle">
+              เมื่อคลิกที่โหนดแกนกลาง ความรู้จะ <strong>“ระเบิด (Booming Burst)”</strong> กระจายตัวออกเป็น 6 สาขาหลัก พร้อมเส้นเชื่อมโยงแบบความสัมพันธ์ข้ามมิติ
+            </p>
+
+            <div class="interactive-boom-box">
+              <div class="canvas-controls">
+                <span class="canvas-tag">⚡ Live Canvas Demo</span>
+                <button class="btn-ctrl btn-primary" id="reburstBtn">
+                  💥 จำลอง Booming ใหม่
+                </button>
+              </div>
+              <canvas id="boomingCanvas" style="width: 100%; border-radius: 8px; background: #F8FAFC;"></canvas>
+            </div>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 16px;">
+            <div class="image-tech-frame">
+              <img src="data_booming.jpg" alt="Data Booming Infographic">
+              <div class="image-caption-hud">
+                <span>RADIAL MULTI-LAYER KNOWLEDGE EXPLOSION</span>
+                <span>REAL-TIME ENGINE</span>
+              </div>
+            </div>
+
+            <div class="tech-card">
+              <h4 style="font-family: var(--font-heading); margin-bottom: 8px;">หลักการทำงานที่ระบุใน Brief</h4>
+              <ul style="padding-left: 20px; font-size: 0.9rem; color: var(--gr-fog);">
+                <li>เริ่มจากโหนดหัวข้อเดียวกลางจอ</li>
+                <li>ระเบิดออก 6–12 โหนดลูกตามแนวรัศมี (Delay 40ms/node)</li>
+                <li>ผู้ใช้สามารถเจาะลึกลงไปได้สูงสุด 3 ชั้น (Depth-3 Traversal)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SLIDE 6: National Knowledge Graph Architecture ================= -->
+      <section class="slide" id="slide-6">
+        <div class="slide-hud">
+          <span class="hud-code">STAGE 06 // KNOWLEDGE GRAPH ARCHITECTURE</span>
+          <span class="hud-badge">CONNECTED MULTI-SOURCE SYSTEM</span>
+        </div>
+
+        <h2 class="slide-title">สถาปัตยกรรมคลังความรู้แห่งชาติ (Knowledge Graph)</h2>
+        <p class="slide-subtitle">รวบรวม 4 แหล่งข้อมูลความรู้หลักสู่ระบบรวมศูนย์ที่ชาญฉลาด</p>
+
+        <div class="grid-2col">
+          <div class="image-tech-frame">
+            <img src="ChatGPT Image Oct 8, 2026, 09_53_33 PM-2.png" alt="Knowledge Graph Architecture">
+            <div class="image-caption-hud">
+              <span>UNIFIED MULTI-SOURCE GRAPH: BOOKS • TEXTBOOKS • DATABASES • COMMUNITY</span>
+            </div>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 14px;">
+            <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+              <button class="node-chip category-chip active" data-cat="all">⚡ ภาพรวมทั้งหมด</button>
+              <button class="node-chip category-chip" data-cat="science">🔬 วิทยาศาสตร์</button>
+              <button class="node-chip category-chip" data-cat="history">📜 ประวัติศาสตร์</button>
+              <button class="node-chip category-chip" data-cat="tech">💻 นวัตกรรมเทคโนโลยี</button>
+            </div>
+
+            <div class="tech-card" id="categoryDetailBox" style="min-height: 120px;">
+              <h4 style="font-family: var(--font-heading); font-size: 1.1rem; color: var(--gr-void); margin-bottom: 6px;">
+                🔍 ข้อมูลเชิงความสัมพันธ์ (Semantic Relations)
+              </h4>
+              <p id="categoryDetail" style="font-size: 0.95rem; color: var(--gr-fog);">
+                ระบบรองรับความสัมพันธ์ เช่น <code>influenced</code> (มีอิทธิพลต่อ), <code>derived_from</code> (พัฒนามาจาก), และ <code>used_in</code> (นำไปใช้ใน) แสดงผลด้วยเส้นทึบ เส้นประ และเส้นจุดตามมาตรฐานสากล
+              </p>
+            </div>
+
+            <div class="grid-2col" style="gap: 12px;">
+              <div class="boom-metric">
+                <div class="metric-num text-cyan" style="font-size: 2rem;">Canvas D3</div>
+                <div class="metric-label">Force-Directed Engine</div>
+                <div class="metric-sub">รองรับ 50,000+ Nodes ลื่นไหล 60 FPS</div>
+              </div>
+              <div class="boom-metric">
+                <div class="metric-num text-ember" style="font-size: 2rem;">WCAG AA</div>
+                <div class="metric-label">Accessibility</div>
+                <div class="metric-sub">รองรับผู้มีข้อจำกัดด้านสายตาครบถ้วน</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SLIDE 7: 5-Stage Mission Roadmap ================= -->
+      <section class="slide" id="slide-7">
+        <div class="slide-hud">
+          <span class="hud-code">STAGE 07 // ROADMAP & EXECUTION</span>
+          <span class="hud-badge">5-STEP KNOWLEDGE JOURNEY</span>
+        </div>
+
+        <h2 class="slide-title">เส้นทางการดำเนินงาน 5 ขั้นตอน (Excavate → Apply)</h2>
+        <p class="slide-subtitle">มาตรฐานการแปรสภาพคลังข้อมูลกระจัดกระจายให้กลายเป็นคุณค่าของชาติ</p>
+
+        <div style="margin-bottom: 24px;">
+          <div class="image-tech-frame">
+            <img src="roadmap.jpg" alt="5 Step Roadmap" style="max-height: 240px; width: 100%; object-fit: contain;">
+          </div>
+        </div>
+
+        <div class="grid-5col">
+          <div class="tech-card" style="padding: 16px;">
+            <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--gr-ember); font-weight: 700;">STEP 01</div>
+            <h4 style="font-family: var(--font-heading); font-size: 1.1rem; margin: 4px 0;">EXCAVATE</h4>
+            <p style="font-size: 0.85rem; color: var(--gr-fog);">ขุดค้นคัดสรรความรู้ ระบุแหล่งอ้างอิงชัดเจน</p>
+          </div>
+
+          <div class="tech-card" style="padding: 16px;">
+            <div style="font-family: var(--font-mono); font-size: 0.75rem; color: #84CC16; font-weight: 700;">STEP 02</div>
+            <h4 style="font-family: var(--font-heading); font-size: 1.1rem; margin: 4px 0;">DECODE</h4>
+            <p style="font-size: 0.85rem; color: var(--gr-fog);">ถอดรหัสโครงสร้างสู่โหนดและความสัมพันธ์</p>
+          </div>
+
+          <div class="tech-card" style="padding: 16px;">
+            <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--gr-cyan); font-weight: 700;">STEP 03</div>
+            <h4 style="font-family: var(--font-heading); font-size: 1.1rem; margin: 4px 0;">RETELL</h4>
+            <p style="font-size: 0.85rem; color: var(--gr-fog);">เล่าใหม่ด้วย Visual & Interactive สื่อเข้าใจไว</p>
+          </div>
+
+          <div class="tech-card" style="padding: 16px;">
+            <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--gr-violet); font-weight: 700;">STEP 04</div>
+            <h4 style="font-family: var(--font-heading); font-size: 1.1rem; margin: 4px 0;">CONNECT</h4>
+            <p style="font-size: 0.85rem; color: var(--gr-fog);">เปิด Graph ให้เห็นความเชื่อมโยงข้ามยุคสมัย</p>
+          </div>
+
+          <div class="tech-card" style="padding: 16px;">
+            <div style="font-family: var(--font-mono); font-size: 0.75rem; color: #10B981; font-weight: 700;">STEP 05</div>
+            <h4 style="font-family: var(--font-heading); font-size: 1.1rem; margin: 4px 0;">APPLY</h4>
+            <p style="font-size: 0.85rem; color: var(--gr-fog);">สรุปการ์ด Everyday Takeaway นำไปใช้ทันที</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SLIDE 8: Tech Stack & Antigravity Workflow ================= -->
+      <section class="slide" id="slide-8">
+        <div class="slide-hud">
+          <span class="hud-code">STAGE 08 // TECHNICAL IMPLEMENTATION</span>
+          <span class="hud-badge">NEXT.JS + TAILWIND + D3.JS + ANTIGRAVITY</span>
+        </div>
+
+        <h2 class="slide-title">สถาปัตยกรรมทางเทคนิค & การส่งมอบโครงการ</h2>
+        <p class="slide-subtitle">พัฒนาด้วยมาตรฐานเว็บล้ำสมัย ผสานกระบวนการ Google Antigravity Agentic AI</p>
+
+        <div class="grid-3col">
+          <div class="tech-card">
+            <h3 class="pillar-title" style="color: var(--gr-void);">Frontend Architecture</h3>
+            <ul style="padding-left: 20px; font-size: 0.9rem; color: var(--gr-fog); margin-top: 10px; line-height: 1.8;">
+              <li><strong>Framework:</strong> Next.js App Router + TypeScript</li>
+              <li><strong>Design Tokens:</strong> Tailwind CSS + CSS Variables</li>
+              <li><strong>Thai Typography:</strong> Chakra Petch & IBM Plex Sans Thai</li>
+              <li><strong>Responsive Grid:</strong> 12 / 8 / 4 คอลัมน์ รองรับมือถือสมบูรณ์แบบ</li>
+            </ul>
+          </div>
+
+          <div class="tech-card">
+            <h3 class="pillar-title" style="color: var(--gr-void);">Data Booming Engine</h3>
+            <ul style="padding-left: 20px; font-size: 0.9rem; color: var(--gr-fog); margin-top: 10px; line-height: 1.8;">
+              <li><strong>Graph Visualization:</strong> D3.js (d3-force) เรนเดอร์บน HTML5 Canvas</li>
+              <li><strong>Motion Language:</strong> Cubic-bezier(0.16, 1, 0.3, 1)</li>
+              <li><strong>Accessibility:</strong> รองรับ <code>prefers-reduced-motion</code></li>
+              <li><strong>Micro-Interactions:</strong> 150ms / 300ms ไม่กระพริบเกิน WCAG AA</li>
+            </ul>
+          </div>
+
+          <div class="tech-card">
+            <h3 class="pillar-title" style="color: var(--gr-void);">Antigravity AI Automation</h3>
+            <ul style="padding-left: 20px; font-size: 0.9rem; color: var(--gr-fog); margin-top: 10px; line-height: 1.8;">
+              <li><strong>Workspace Rule:</strong> ผูกเงื่อนไข brief เข้า <code>.agent/rules/</code></li>
+              <li><strong>Phase 1:</strong> Style Guide & Tokens Verification</li>
+              <li><strong>Phase 2:</strong> Interactive Knowledge Graph Pages</li>
+              <li><strong>Automated QA:</strong> ตรวจความคมชัดสีและประสิทธิภาพก่อน Release</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SLIDE 9: Summary & Government Recommendation ================= -->
+      <section class="slide" id="slide-9">
+        <div class="slide-hud">
+          <span class="hud-code">STAGE 09 // CONCLUSION & CALL TO ACTION</span>
+          <span class="hud-badge">NEXT STEPS FOR DIGITAL MINISTRY</span>
+        </div>
+
+        <div class="grid-2col">
+          <div>
+            <h2 class="slide-title">ข้อเสนอแนะเชิงนโยบายเพื่อขับเคลื่อนระดับชาติ</h2>
+            <p class="slide-subtitle">
+              GRURU MUSEUM พร้อมทำหน้าที่เป็น Flagship Platform ในการพลิกโฉมคลังความรู้ประเทศสู่ระบบดิจิทัลระดับสากล
+            </p>
+
+            <div style="display: flex; flex-direction: column; gap: 14px; margin-top: 20px;">
+              <div class="tech-card" style="border-left: 4px solid var(--gr-lime);">
+                <strong style="color: var(--gr-void); font-size: 1rem;">1. เชื่อมต่อฐานข้อมูลหน่วยงานภาครัฐ (Public Knowledge Integration)</strong>
+                <p style="font-size: 0.88rem; color: var(--gr-fog); margin-top: 4px;">
+                  บูรณาการคลังจดหมายเหตุ พิพิธภัณฑ์สถานแห่งชาติ และสำนักงานนวัตกรรมแห่งชาติเข้าสู่ Knowledge Graph
+                </p>
+              </div>
+
+              <div class="tech-card" style="border-left: 4px solid var(--gr-cyan);">
+                <strong style="color: var(--gr-void); font-size: 1rem;">2. ผลักดัน Open Data Knowledge Graph เพื่อสตาร์ตอัปและนักวิจัยไทย</strong>
+                <p style="font-size: 0.88rem; color: var(--gr-fog); margin-top: 4px;">
+                  เปิด API มาตรฐานสากลให้นักพัฒนาและมหาวิทยาลัยนำไปเทรนโมเดล AI ภาษาไทยที่มีการอ้างอิงแม่นยำ
+                </p>
+              </div>
+
+              <div class="tech-card" style="border-left: 4px solid var(--gr-violet);">
+                <strong style="color: var(--gr-void); font-size: 1rem;">3. โครงการนำร่องในโรงเรียนและสถาบันการศึกษา (Education Pilot)</strong>
+                <p style="font-size: 0.88rem; color: var(--gr-fog); margin-top: 4px;">
+                  เปิดโซน Data Booming ให้เยาวชนได้สำรวจความรู้แบบ Interactive เพื่อพัฒนาทักษะการคิดเชิงวิเคราะห์
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; background: #FFFFFF; border: 1px solid var(--gr-border); border-radius: 12px; padding: 40px; box-shadow: var(--shadow-lg);">
+            <img src="logo.jpg" alt="GRURU Museum" style="width: 110px; height: 110px; border-radius: 16px; margin-bottom: 20px; box-shadow: var(--shadow-md);">
+            <h3 style="font-family: var(--font-heading); font-size: 1.8rem; color: var(--gr-void); margin-bottom: 8px;">GRURU MUSEUM</h3>
+            <p style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--gr-cyan); margin-bottom: 24px;">“อดีตคือข้อมูล อนาคตคือเรื่องเล่า”</p>
+            <div style="background: rgba(215, 255, 58, 0.25); border: 1px solid var(--gr-lime); padding: 14px 24px; border-radius: 8px; width: 100%;">
+              <div style="font-weight: 700; color: #1E293B; font-size: 1.05rem;">พร้อมเริ่มพัฒนาเฟสที่ 1 ทันที</div>
+              <div style="font-size: 0.82rem; color: var(--gr-fog); font-family: var(--font-mono); margin-top: 4px;">STATUS: READY FOR DIGITAL MINISTRY APPROVAL</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Bottom Presentation Footer & Controls -->
+    <footer class="deck-footer">
+      <div class="slide-counter" id="slideCounter">01 / 09</div>
+
+      <div class="progress-track">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+
+      <div class="footer-keys">
+        <span><span class="key-badge">←</span> <span class="key-badge">→</span> เปลี่ยนสไลด์</span>
+        <span><span class="key-badge">Space</span> ถัดไป</span>
+        <span><span class="key-badge">F</span> เต็มหน้าจอ</span>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <!-- Also linking script.jss as fallback if needed -->
+  <script src="script.jss"></script>
+</body>
+</html>
